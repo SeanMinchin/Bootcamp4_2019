@@ -50,14 +50,21 @@ td:hover {
 /* ##### Columns ##### */
 .column1 {
 	float: left;
-	width: 50%;
+	width: 40%;
 	padding: 10px;
 }
 .column2 {
 	float: left;
-	width: 50%;
+	width: 40%;
 	padding: 20px;
 	background-color: #ccdef9;
+}
+
+.column3 {
+	float: left;
+	width: 20%;
+	padding: 20px;
+	background-color: #f9b87b; 
 }
 
 /* ##### Rows ##### */

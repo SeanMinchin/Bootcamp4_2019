@@ -10,12 +10,25 @@ class ViewBuilding extends React.Component {
 				return building.id === selectedBuilding
 			})
 			.map(building => {
+				//console.log('lat: ', building.coordinates.latitude)
+				let coord, addr = '';
+				if(typeof building.coordinates !== 'undefined'
+					&& !(isNaN(building.coordinates.latitude) || isNaN(building.coordinates.longitude))) {
+						coord = building.coordinates.latitude + ', ' + building.coordinates.longitude;
+				} else {
+					coord = 'n/a';
+				}
+				if(typeof building.address !== 'undefined' && building.address !== '') {
+					addr = building.address;
+				} else {
+					addr = 'n/a';
+				}
 				return (
 					<div>
 						<tr><row><b> Code: </b>{building.code} </row></tr>
 						<tr><row><b> Name: </b>{building.name} </row></tr>
-						<tr><row><b> Coordinates: </b>{building.coordinates.latitude}, {building.coordinates.longitude} </row></tr>
-						<tr><row><b> Address: </b>{building.address} </row></tr>
+						<tr><row><b> Coordinates: </b>{coord} </row></tr>
+						<tr><row><b> Address: </b>{addr} </row></tr>
 					</div>
 				);
 			});
