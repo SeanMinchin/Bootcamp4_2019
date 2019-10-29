@@ -4,6 +4,10 @@ body {
 	font-family: sans-serif;
 }
 
+.bg {
+	background-color: #29d0d6;
+}
+
 /* ##### general ##### */
 * {
 	box-sizing: border-box;
@@ -14,20 +18,25 @@ main {
 
 /* ##### Search ##### */
 header {
+	padding: 60px;
 	background: #3498db;
 	margin-bottom: 2rem;
+	font-size: 3rem;
+	text-align: center;
+	font-weight: bold;
+	color: #ff8000;
 }
 
 input[type='text'] {
 	margin: 1rem;
-	background: #fff;
+	background: #c9e0f5;
 	font-size: 1.3rem;
 	border: none;
 	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
 	border-radius: 3px;
 	padding: 0 2rem;
 	width: calc(100% - 2rem);
-	height: 4rem;
+	height: 3rem;
 }
 
 /* ##### NamesList ##### */
@@ -44,7 +53,7 @@ th {
 td:hover {
 	position: left;
 	cursor: pointer;
-	background-color: #ddd;
+	background-color: #ffac30;
 }
 
 /* ##### Columns ##### */
@@ -52,19 +61,20 @@ td:hover {
 	float: left;
 	width: 40%;
 	padding: 10px;
+	background-color: #f9b87b;
 }
 .column2 {
 	float: left;
-	width: 40%;
+	width: 30%;
 	padding: 20px;
-	background-color: #ccdef9;
+	background-color: #f9b87b;
 }
 
 .column3 {
 	float: left;
-	width: 20%;
+	width: 30%;
 	padding: 20px;
-	background-color: #f9b87b; 
+	background-color: #f9b87b;
 }
 
 /* ##### Rows ##### */
@@ -88,13 +98,14 @@ td:hover {
 /* ##### Footer ##### */
 .credit {
 	padding: 1rem 0;
-	color: #b3b3b3;
+	color: #ffffff;
+	background-color: #f0c330;
 }
 .credit a {
 	color: #3498bb;
 }
 button {
-	background: #d7d7d7;
+	background: #ccdef9;
 	color: #3b3b3b;
 	padding: 0.6rem 1rem;
 	font-size: 0.8rem;
@@ -105,5 +116,5 @@ button {
 	outline: none;
 }
 button:hover {
-	background: #ddd;
+	background: #1f7acf;
 }

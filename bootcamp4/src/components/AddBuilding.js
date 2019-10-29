@@ -5,6 +5,8 @@ class AddBuilding extends React.Component {
 		const { addedUpdate } = this.props;
 		return (
 			<div>
+				<i>Fill in the below properties to add a building</i>
+				<p></p>
 				<form>
 					<input
 					type="text"
