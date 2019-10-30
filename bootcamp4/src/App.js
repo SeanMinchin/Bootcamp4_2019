@@ -101,8 +101,6 @@ class App extends React.Component {
                 removedUpdate={this.removedUpdate.bind(this)}
                 selectedBuilding={this.state.selectedBuilding}
               />
-            </div>
-            <div className="column3">
               <AddBuilding
                 addedUpdate={this.addedUpdate.bind(this)}
               />

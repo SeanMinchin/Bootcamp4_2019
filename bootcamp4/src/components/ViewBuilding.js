@@ -25,10 +25,18 @@ class ViewBuilding extends React.Component {
 				}
 				return (
 					<div>
-						<tr><row><b> Code: </b>{building.code} </row></tr>
-						<tr><row><b> Name: </b>{building.name} </row></tr>
-						<tr><row><b> Coordinates: </b>{coord} </row></tr>
-						<tr><row><b> Address: </b>{addr} </row></tr>
+						<p>
+							<row><b> Code: </b>{building.code} </row>
+						</p>
+						<p>
+							<row><b> Name: </b>{building.name} </row>
+						</p>
+						<p>
+							<row><b> Coordinates: </b>{coord} </row>
+						</p>
+						<p>
+							<row><b> Address: </b>{addr} </row>
+						</p>
 					</div>
 				);
 			});

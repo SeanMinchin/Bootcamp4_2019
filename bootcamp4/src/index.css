@@ -59,15 +59,16 @@ td:hover {
 /* ##### Columns ##### */
 .column1 {
 	float: left;
-	width: 40%;
+	width: 50%;
 	padding: 10px;
 	background-color: #f9b87b;
 }
 .column2 {
 	float: left;
-	width: 30%;
+	width: 50%;
 	padding: 20px;
 	background-color: #f9b87b;
+	border-style: double;
 }
 
 .column3 {
@@ -75,6 +76,7 @@ td:hover {
 	width: 30%;
 	padding: 20px;
 	background-color: #f9b87b;
+	border-style: double;
 }
 
 /* ##### Rows ##### */
